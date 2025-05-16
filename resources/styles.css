@@ -329,12 +329,12 @@ textarea {
 	height:100px;
 }
 .widegallery {
-	display:flex;
+	display:block;
 	gap:20px;
-	overflow-x: auto;
+	max-height: 400px;
+	max-width: 400px;
+	overflow-y: auto;
 	padding-bottom: 20px;
-	scroll-behavior:auto;
-	background-color: aqua;
 }
 .widegallery2 {
 	width:80%;
