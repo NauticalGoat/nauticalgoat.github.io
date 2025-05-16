@@ -60,7 +60,7 @@
                     <h2>Creature</h2>
                     <p>A mock gaming and streaming peripheral company.
                         This is a branding project for a company that would sell physical products. Those products being cryptic themed gaming headsets, keyboards, microphones and other gaming and streaming peripherals.</p>
-                    <div class="widegallery" onWheel= "this.scrollLeft+=event.deltaY>0?100:-100">
+                    <div class="widegallery">
                         <a href="resources/WendigoRoundSign-4C-300.jpg"><img src="resources/thumbs/WendigoRoundSign_thumb.jpg"></a>
                         <a href="resources/WendigoBox-4C-300.jpg"><img src="resources/thumbs/WendigoBox_thumb.jpg"></a>
                         <a href="resources/WendigoTShirt-4C-300.jpg"><img src="resources/thumbs/WendigoTShirt_thumb.jpg"></a>
@@ -68,7 +68,7 @@
                 </div>
             </div>
             <div class="wns squares section folio">
-                <div class="barrel">
+                <div class="barrel fp-overflow">
                     <h2>Wander Navigate Skate</h2>
                     <p>A mock Longboard and Skate company. This multi-medium project involved making a brand, service, viability plan, app, and website. The company not only sells longboards but is aiming to build a community to offer guides for beginners and a collaborative “Where to Skate” map. </p>
                     <div class="widegallery"> 
@@ -152,6 +152,7 @@
     <script type="text/javascript" src="resources/fullPage.js-master/dist/fullpage.js"></script>
     <script type="text/javascript"> //FULLPAGE SCROLL
         var myFullpage = new fullpage('#fullpage', {
+            scrollOverflow:true,            
             normalScrollElements: '.widegallery,',
             navigation: true,
             navigationPosition: 'right',
@@ -159,12 +160,10 @@
             navigationColor: '#333333',
             sectionsColor: ['#DCDDDE', '#D1D3D4', '#C7CBCA', '#BCBEC0', '#B1B3B6'],
             sectionsColor: ['#414042', '#48484a', '#4d4d4f', '#545456', '#5a5b5d'],
-            dragAndMove: vertical,
+            dragAndMove: true,
             /*responsiveWidth: 767,*/
             responsiveHeight:500,
             afterResponsive: function(isResponsive){},
-            
-
         });
     </script>
     
