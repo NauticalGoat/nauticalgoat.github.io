@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="../resources/icon.ico"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../resources/styles.css" rel="stylesheet" type="text/css">
+    <title>Make Contact | wetgoat_ </title>
+    <meta name="description" content="How to contact the Goat That Floats. Graphic Design and Illustration solutions made bespoke for you.">
+</head>
+
+<body>
+    <a class="hamburger" href="#">&#9776;</a>
+
+    <header>
+        <div class="barrel">
+        <a href="../index.html"><img src="../resources/RecwhiteGoat.svg"></a>
+        <nav>
+            <a href="../index.html">home <span></span></a>
+            <a href="folio.html">portfolio <span></span></a>
+            <a href="artist.html">artist <span></span></a>
+            <a class="active" href="contact.html">contact <span></span></a>
+        </nav>
+        </div>
+        <div class="clearfix"></div>
+        <nav class="hamburg-nav" style="display:none;">
+            <a href="../index.html">home </a>
+            <a href="folio.html">portfolio </a>
+            <a href="artist.html">artist </a>
+            <a class="active" href="contact.html">contact </a>
+        </nav>
+    </header>
+    
+    
+    <section class="bigcontact">
+        <div class="colm splitback">
+            <div class="contactblock heyblock">
+                <h2>Come Say Hey!</h2>
+                <p>Feel free to reach out! <br> I'm open to commisions, projects, being employed, or even a chat.</p>
+            </div>
+        </div>
+        <div class="colm splitbackpt2">
+            <div class="contactblock wonky">
+                <form action="https://formsubmit.co/347665b3a745bcaa1fa9a5b460b3ec6f" method="POST">
+                <input type="hidden" name="_subject" value="Conact Form - wetgoat_">
+                    <p>
+                        <label for="name"  name="Fullname">NAME <span>•</span></label><br>
+                        <input id="name" name="Fullname" class="field" type="text" placeholder="Chris Cardinal" required>
+                    </p>
+                    <p>
+                        <label for="email" name="email">EMAIL <span>•</span></label><br>
+                        <input id="email" name="email" class="field" type="text" placeholder="JarOHoney@robin.co.uk" required>
+                    </p>
+                    <p id="optical">
+                        <label for="mtnDew">MOUNTAIN DEW?</label> <br>
+                        <label for="mtnDewYes">Like It</label>
+                        <input class="radbutton" type="radio" name="mtnDew" id="mtnDewYes" value="Yes to Mountain Dew">
+                        <label for="mtnDewNo">Don't Like It</label>
+                        <input class="radbutton" type="radio" name="mtnDew" id="mtnDewNo" value="No to Mountain Dew">
+                    </p>
+                    <p>
+                        <label for="filler">MESSAGE</label><br>
+                        <textarea id="filler" name="textfieild" class="field" placeholder="Your message: a question, a complaint, a funny meme, or just about anything else."></textarea>
+                    </p>
+                    <p><input class="button" type="submit" value="Send it!"></p>
+                </form>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="barrel">
+            <div class="footgroup">
+                <a href="../index.html">home <span></span></a><br>
+                <a href="folio.html">portfolio <span></span></a><br>
+                <a href="artist.html">artist <span></span></a><br>
+                <a href="contact.html">contact <span></span></a>
+            </div>
+            <div class="socialgroup">
+                <a href="https://tiktok.com/@wetgoat_"><img src="..\resources\tiktoklogo.svg"></a>
+                <a href="https://twitter.com/wetgoat_"><img src="..\resources\twitterlogo.svg"></a>
+                <a href="https://www.youtube.com/channel/UCq2_NxUd1PRMznijQgyie0w"><img src="..\resources\youtubelogo.svg"></a>
+                <a href="https://instagram.com/wetgoat_/"><img src="..\resources\instalogo.svg"></a>
+                <a href="https://www.facebook.com/wetgoat.co"><img src="..\resources\facebooklogo.svg"></a>
+                <div class="push"><a href="https://linktr.ee/wetgoat_">@wetgoat_</a></div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="linebreak"></div>
+
+            <p>Copyright 2022 wetgoat_ &copy;</p>
+        </div>
+        
+    </footer>
+    <script src="../resources/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+    <script> 
+        $('.hamburger').click(function(e){
+            e.preventDefault();
+            $('.hamburg-nav').slideToggle();
+        });
+    </script>
+</body>
+</html>
