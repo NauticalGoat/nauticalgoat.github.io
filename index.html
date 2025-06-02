@@ -17,7 +17,7 @@
     <a class="hamburger" href="#">&#9776;</a>
 
     <header id="hideHeader">
-        <div class="barrel">
+        <div class="barrelHeader">
         <a href="#"><img src="resources/wetgoat_concept_horiz_w.svg"></a>
         <nav>
             <a class="active" href="#">portfolio <span></span></a>
@@ -32,7 +32,7 @@
     </header>
 
     <section class="mainFront" id="fullpage">
-            <div class="intro squares section">
+            <div class="intro squares section" id="section0">
                 <div class="barrel">
                     <table>
                         <tr>
@@ -55,7 +55,7 @@
                     </table>
                 </div>
             </div>
-            <div class="creature squares section folio">
+            <div class="creature squares section folio" id="section1">
                 <div class="barrel">
                     <h2>Creature</h2>
                     <p>A mock gaming and streaming peripheral company.
@@ -67,8 +67,8 @@
                     </div>
                 </div>
             </div>
-            <div class="wns squares section folio">
-                <div class="barrel fp-overflow">
+            <div class="wns squares section folio" id="section2">
+                <div class="barrel">
                     <h2>Wander Navigate Skate</h2>
                     <p>A mock Longboard and Skate company. This multi-medium project involved making a brand, service, viability plan, app, and website. The company not only sells longboards but is aiming to build a community to offer guides for beginners and a collaborative “Where to Skate” map. </p>
                     <div class="widegallery"> 
@@ -78,13 +78,14 @@
                         <a href="resources/10_Guides.png"><img src="resources/thumbs/10_Guides_thumb.png"></a>
                         <a href="resources/12_Skate Map.png"> <img src="resources/thumbs/12_Skate Map_thumb.png"></a>
                     </div>
+                    <div class="shortSpace"></div>
                 </div>
             </div>
-            <div class="talltale squares section folio">
+            <div class="talltale squares section folio" id="section3">
                 <div class="barrel">
                     <h2>TallTale Brewing Company</h2>
                     <p>A mock brewery. This project involved designing a consistent look for a multitude of alcoholic beverage styles. The challenge was making sure whiskey still looked like whiskey and wine still looked like wine while easily identifying it as part of the TallTale family of drinks. </p>
-                    <div class="widegallery2">
+                    <div class="widegallery">
                         <a href="resources/TallTale_4C_300.jpg"><img src="resources/thumbs/TallTale_thumb.jpg"></a>
                         <a href="resources/TallTale-Whisky.png"><img src="resources/thumbs/TallTale-Whisky_thumb.png"></a>
                         <a href="resources/TallTale-Wine.png"><img src="resources/thumbs/TallTale-Wine_thumb.png"></a>
@@ -92,15 +93,18 @@
                         <a href="resources/TallTale-BC.png"><img src="resources/thumbs/TallTale-BC_Thumb.png"></a>
                         <a href="resources/TallTale-BB.png"><img src="resources/thumbs/TallTale-BB_Thumb.png"></a>
                     </div>
+                    <div class="shortSpace"></div>
                 </div>
             </div>
-            <div class="illustrait squares section folio">
+            <div class="illustrait squares section folio" id="section4">
                 <div class="barrel">
                     <h2>Illustration</h2>
                     <p>Various illustrations covering a veriety of topics and usability. Form creative self-portraits to emojis that fit my brand and personality to a cryptic, psychologically spooky narrative podcast I wrote and performed. Logos aren't the only thing I'm good at.</p>
-                    <a href="resources/Headstrong.png"><img src="resources/thumbs/Headstrong_thumb.png"></a>
-                    <a href="resources/Banner@NG-DM.png"><img src="resources/thumbs/VMS_thumb.png"></a>
-                    <a href="resources/Emotes.png"><img src="resources/thumbs/3Heart-thumb.png"></a>
+                    <div class="widegallery">
+                        <a href="resources/Headstrong.png"><img src="resources/thumbs/Headstrong_thumb.png"></a>
+                        <a href="resources/Banner@NG-DM.png"><img src="resources/thumbs/VMS_thumb.png"></a>
+                        <a href="resources/Emotes.png"><img src="resources/thumbs/3Heart-thumb.png"></a>
+                    </div>
                 </div>
                 <!--<div class="bottomspace"></div>-->
 
@@ -152,8 +156,6 @@
     <script type="text/javascript" src="resources/fullPage.js-master/dist/fullpage.js"></script>
     <script type="text/javascript"> //FULLPAGE SCROLL
         var myFullpage = new fullpage('#fullpage', {
-            scrollOverflow:true,            
-            normalScrollElements: '.widegallery,',
             navigation: true,
             navigationPosition: 'right',
             navigationTooltips: ['Intro', 'Creature', 'Wander Navigate Skate', 'TallTale', 'Illustration'],
@@ -161,9 +163,12 @@
             sectionsColor: ['#DCDDDE', '#D1D3D4', '#C7CBCA', '#BCBEC0', '#B1B3B6'],
             sectionsColor: ['#414042', '#48484a', '#4d4d4f', '#545456', '#5a5b5d'],
             dragAndMove: true,
+            scrollBar: false,
+            scrollOverflow: true,
             /*responsiveWidth: 767,*/
-            responsiveHeight:500,
+            responsiveHeight:700,
             afterResponsive: function(isResponsive){},
+
         });
     </script>
     
