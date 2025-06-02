@@ -52,6 +52,14 @@ a {
 	margin-right:auto;
 	/* background-color: aqua;*/
 }
+.barrelHeader {
+	width:1100px;
+	max-width:90%;
+	margin-left:auto;
+	margin-right:auto;
+	/* background-color: aqua;*/
+	height: calc(100% - 334px);
+}
 .linebreak {
     margin: 25px 100px;
     border-bottom: 3px solid #696969;
@@ -144,11 +152,11 @@ nav .active {
 	min-width: 30vw;
 	border-radius: 20px;
 }
+.intro {
+	padding-top:50px;
+}
 .mainFront img {
-	max-width: 30vw;
-	min-width: 30vw;
 	border-radius: 20px;
-	
 }
 .mainFront th {
 	font-weight: normal;
@@ -175,9 +183,6 @@ nav .active {
 }
 .frontpage a:hover {
 	color: #F78C25;
-}
-.frontpage {
-	
 }
 .duncan_sux {
 	margin: 0 20%;
@@ -315,10 +320,9 @@ textarea {
 	color:rgb(219, 219, 219);
 }
 .folio img {
-	height: auto;
-	width: 32.5%;
 	transition:all 0.3s ease-in-out;
 	opacity: 65%;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 6px, rgba(0, 0, 0, 0.10) 0px 3px 6px;
 }
 .folio img:hover {
 	opacity: 100%;
@@ -328,14 +332,20 @@ textarea {
 	margin-bottom: 20px;
 	height:100px;
 }
-.widegallery {
-	display:block;
-	gap:20px;
-	max-height: 400px;
-	max-width: 400px;
-	overflow-y: auto;
-	padding-bottom: 20px;
+.shortSpace {
+	height:0;
 }
+.widegallery {
+	gap:20px;	
+	max-height: 80vh;
+	max-width: 100%;
+}
+.widegallery img {
+	margin: 10px;
+	max-width: 30%;
+	max-height: 40%;
+}
+
 .widegallery2 {
 	width:80%;
 	margin: 0 auto;
@@ -350,6 +360,7 @@ textarea {
 	align-items: center;
 	margin:0 auto;
 }
+
 .thisIsNotAGoodFix {
 	text-align:center;
 }
@@ -497,7 +508,10 @@ footer p {
 	.wonky {
 		Right: 10%;
 	}
-
+	.widegallery {
+		display:flex;
+		overflow-x: scroll;
+	}
 	/*.mainFront h1 {
 		font-size:14vw;
 		height: 25vw;
@@ -521,5 +535,18 @@ footer p {
 	}
 	.brickClear {
 		display:none;
+	}
+}
+/* Short Window */
+@media screen and (max-height: 700px) {
+	.shortSpace {
+		height:50vh;
+		display: block;
+	}
+}
+
+@media screen and (min-height:701px) and (max-height:900px) {
+	.widegallery img {
+		max-width: 20%;
 	}
 }
