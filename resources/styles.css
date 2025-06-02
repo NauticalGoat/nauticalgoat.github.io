@@ -1,25 +1,25 @@
 @charset "utf-8";
 @font-face {
     font-family: 'centgoth';
-	src: url(../resources/GOTHIC.TTF);
+	src: url(../resources/fonts/GOTHIC.TTF);
 	font-weight: normal;
 }
 @font-face {
     font-family: 'centgoth';
-	src: url(../resources/GOTHICB.TTF);
+	src: url(../resources/fonts/GOTHICB.TTF);
 	font-weight: bold;
 }
 
 @font-face {
     font-family: 'centgoth';
-	src: url(../resources/GOTHICBI.TTF);
+	src: url(../resources/fonts/GOTHICBI.TTF);
 	font-weight: bold;
 	font-style: italic;
 }
 
 @font-face {
     font-family: 'centgoth';
-	src: url(../resources/GOTHICI.TTF);
+	src: url(../resources/fonts/GOTHICI.TTF);
 	font-weight: normal;
 	font-style: italic;
 }
@@ -508,9 +508,8 @@ footer p {
 	.wonky {
 		Right: 10%;
 	}
-	.widegallery {
-		display:flex;
-		overflow-x: scroll;
+	.widegallery img {
+		max-width: 40%;
 	}
 	/*.mainFront h1 {
 		font-size:14vw;
@@ -529,7 +528,7 @@ footer p {
 	.miniAbout span {
 		font-size:3vw;
 	}
-	.mainFront img {max-width: 70vw;}
+	/*.mainFront img {max-width: 70vw;}*/
 	.brickActive {
 		display:block;
 	}
