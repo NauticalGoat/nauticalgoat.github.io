@@ -423,7 +423,7 @@ textarea {
 	color:rgb(219, 219, 219);
 	display: block;
 }
-.videoBody iframe {
+.fillFrame iframe {
 	display:inline-flex;
 	padding: 5px 10px 5px 0;
 	width: 100%;
@@ -435,6 +435,11 @@ textarea {
 	max-width:100%;
 	overflow-x: scroll;
 	display:inline-flex;
+}
+.videoGallery iframe {
+	aspect-ratio: 16/9;
+	padding-right: 10px;
+	display:flex;
 }
 .videoBody h1 {
 	font-size: 30px;
